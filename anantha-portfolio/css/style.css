@@ -359,6 +359,8 @@ img {
 /* Portrait Card */
 .portrait-column {
   position: relative;
+  display: flex;
+  flex-direction: column;
   width: min(100%, 390px);
   justify-self: center;
   align-self: center;
@@ -371,6 +373,8 @@ img {
   transform: rotate(1.2deg);
   box-shadow: 14px 16px 0 var(--accent-terra-glow);
   border-radius: 2px;
+  /* Extra bottom clearance so the rotated corner doesn't visually clip into the note */
+  margin-bottom: 10px;
 }
 .portrait-frame img {
   display: block;
@@ -390,9 +394,12 @@ img {
   letter-spacing: 1.4px;
 }
 .portrait-note {
+  /* In flex-column flow: appears strictly below the frame */
   position: relative;
   left: -32px;
-  margin-top: 16px;
+  /* width must account for the -32px left shift so it doesn't overflow right */
+  width: calc(100% + 32px);
+  margin-top: 8px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -734,7 +741,8 @@ img {
   }
   .portrait-note {
     left: -12px;
-    margin-top: 12px;
+    width: calc(100% + 12px);
+    margin-top: 8px;
     padding: 10px 14px;
     font-size: 0.8125rem;
   }
