@@ -390,9 +390,9 @@ img {
   letter-spacing: 1.4px;
 }
 .portrait-note {
-  position: absolute;
+  position: relative;
   left: -32px;
-  bottom: 54px;
+  margin-top: 16px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -734,7 +734,7 @@ img {
   }
   .portrait-note {
     left: -12px;
-    bottom: 36px;
+    margin-top: 12px;
     padding: 10px 14px;
     font-size: 0.8125rem;
   }
