@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bus Booking System — Anantha Krishna Manivannan</title>
+  <meta name="description" content="Case study of the Bus Booking System: a Python Flask web application featuring interactive seat layouts and simulated booking flows.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#191a16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Anantha Krishna <span>Manivannan</span><i>.</i></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../pages/experience.html">Experience</a>
+      <a href="../pages/achievements.html">Achievements</a>
+      <a href="../pages/skills-education.html">Skills & Education</a>
+      <a href="../pages/certifications.html">Certifications</a>
+      <a href="../pages/beyond-coding.html">Beyond coding</a>
+      <a class="nav-resume" href="../pages/resume.html">Résumé <span>↗</span></a>
+    </nav>
+  </header>
+  <main id="main" class="page-main">
+    <section class="case-hero">
+      <div class="shell">
+        <p class="eyebrow">Full-stack web application</p>
+        <h1>Bus Booking System</h1>
+        <p>A full-stack reservation portal built with Python and Flask, implementing intercity route discovery, an interactive 2D seat selector, simulated transaction workflows, and ticket issuance.</p>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQLite</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Anantha534/Bus-Booking-System" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Project Motivation & Goals</h2>
+      <p>This project was developed as an exploratory application to understand real-world reservation mechanics, transactional state consistency, and seat-locking patterns in transport platforms.</p>
+      <p>The primary engineering objective was designing an intuitive user experience that guides passengers from route searching to seat selection, checkout simulation, and immediate ticket retrieval.</p>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Architecture & State Management</h2>
+      <p>The application is built on Python's Flask framework with server-side template rendering and client-side JavaScript enhancements:</p>
+      <ul>
+        <li><strong>Server Routing & Business Logic:</strong> Flask handles endpoints for origin-destination searching, bus catalog lookups, seat availability queries, and passenger detail submission.</li>
+        <li><strong>Interactive Seat Layout:</strong> Built with JavaScript and CSS Grid to represent the physical layout of the bus coach. Users can toggle open seats, review selected seat numbers, and see occupied seats locked in real time.</li>
+        <li><strong>Database & Transaction Flow:</strong> Uses SQLite for persisting bus routes, timetables, and historical bookings. Active session booking state is validated server-side during checkout to prevent double-booking of selected seats.</li>
+        <li><strong>Simulated Payment & Ticket Generation:</strong> Implements a simulated payment gateway flow demonstrating checkout confirmation, booking reference assignment, and downloadable ticket summaries.</li>
+      </ul>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Route & Schedule Search:</strong> Query bus departures by origin city, destination, and travel date.</li>
+        <li><strong>Interactive Seat Selection:</strong> Real-time visual representation of window, aisle, and reserved seats.</li>
+        <li><strong>Passenger Information Form:</strong> Validation for passenger names, contact numbers, and seating assignments.</li>
+        <li><strong>Payment Simulation:</strong> Step-by-step mock checkout with immediate payment status confirmation.</li>
+        <li><strong>Ticket Confirmation & Management:</strong> Detailed ticket summary screen with downloadable receipts and cancellation options.</li>
+      </ul>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Technology Stack</h2>
+      <p>Python · Flask · HTML · CSS · JavaScript · SQLite</p>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Project Gallery</h2>
+      <div class="gallery">
+        <figure>
+          <img src="../assets/projects/bus/WhatsApp-Image-2026-05-12-at-10.48.07-PM-1.jpeg" alt="Bus search and route selection screen" loading="lazy" width="600" height="375">
+          <figcaption>Bus search screen showing origin, destination, and departure filters.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/bus/WhatsApp-Image-2026-05-12-at-10.48.07-PM-2.jpeg" alt="Available bus departures list with operator details" loading="lazy" width="600" height="375">
+          <figcaption>Search results displaying available coaches, timings, and ticket prices.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/bus/WhatsApp-Image-2026-05-12-at-10.48.07-PM.jpeg" alt="Interactive seat selection coach layout" loading="lazy" width="600" height="375">
+          <figcaption>Interactive seat map showing occupied and selectable seats.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/bus/WhatsApp-Image-2026-05-12-at-10.48.08-PM.jpeg" alt="Passenger details form and fare summary" loading="lazy" width="600" height="375">
+          <figcaption>Passenger details input form with itemized ticket fare calculations.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/bus/WhatsApp-Image-2026-05-12-at-10.56.57-PM.jpeg" alt="Simulated payment portal checkout screen" loading="lazy" width="600" height="375">
+          <figcaption>Simulated payment gateway screen validating checkout transactions.</figcaption>
+        </figure>
+        <figure>
+          <img src="../assets/projects/bus/WhatsApp-Image-2026-05-12-at-10.57.00-PM.jpeg" alt="Booking confirmation voucher with reference code" loading="lazy" width="600" height="375">
+          <figcaption>Confirmed booking voucher featuring passenger details and booking reference.</figcaption>
+        </figure>
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <a class="wordmark" href="../index.html">Anantha Krishna <span>Manivannan</span><i>.</i></a>
+    <a href="../pages/contact.html">Contact</a>
+    <span>© <span class="year"></span> Anantha Krishna Manivannan</span>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
