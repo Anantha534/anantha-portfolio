@@ -1,2 +1,0 @@
-Add your actual resume PDF to this folder and name it Anantha-Krishna-Resume.pdf.
-The Download résumé button in index.html already points to that filename.
