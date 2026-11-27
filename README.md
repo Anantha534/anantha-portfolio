@@ -28,3 +28,13 @@ Open `index.html` directly in any modern browser, or serve locally with VS Code 
 
 ## Deployment
 This is a clean, dependency-free static website ready for deployment to GitHub Pages, Vercel, or Netlify.
+<<<<<<< HEAD
+=======
+
+
+## Certificate image handling (corrected archive)
+- Supplied single-page PDF certificates have been converted to PNG images for direct display in the Certifications page.
+- Certificate images are opened in the site's existing image lightbox.
+- Incorrectly mapped files were removed from the Experience and Achievements pages. In particular, a personal school marksheet and a student ID image were removed from the public asset set.
+- Only verified, correctly matched certificate images are displayed. The supplied archive did not include the original certificate images for several Experience entries or the listed event participation certificates; those entries are labelled accordingly rather than showing unrelated images.
+>>>>>>> 40bacd1bd533e7ece4a632db027fe201ab4c803f
