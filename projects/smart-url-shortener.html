@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart URL Shortener & Analytics — Anantha Krishna Manivannan</title>
+  <meta name="description" content="Engineering case study: Smart URL Shortener with real-time click telemetry and analytics built during the Unboxed Hackathon sprint.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <meta name="theme-color" content="#191a16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="../index.html">Anantha Krishna <span>Manivannan</span><i>.</i></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../pages/about.html">About</a>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../pages/experience.html">Experience</a>
+      <a href="../pages/achievements.html">Achievements</a>
+      <a href="../pages/skills-education.html">Skills & Education</a>
+      <a href="../pages/certifications.html">Certifications</a>
+      <a href="../pages/beyond-coding.html">Beyond coding</a>
+      <a class="nav-resume" href="../pages/resume.html">Résumé <span>↗</span></a>
+    </nav>
+  </header>
+  <main id="main" class="page-main">
+    <section class="case-hero">
+      <div class="shell">
+        <p class="eyebrow">Unboxed · Summer Buildfest 2026</p>
+        <h1>Smart URL Shortener & Analytics Platform</h1>
+        <p>A high-performance URL shortening and telemetry tracking engine engineered during a focused six-hour hackathon sprint.</p>
+        <div class="tags">
+          <span>React</span><span>TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>Node.js</span><span>Express</span><span>SQLite</span><span>bcrypt</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Sprint Context & Objective</h2>
+      <p>Developed as a competitive entry for <em>Unboxed – An Engineering Challenge</em> at Easwari Engineering College (7 August 2026). The competition challenged teams to plan, build, and demonstrate an end-to-end full-stack software application within a strict six-hour time limit.</p>
+      <p>The goal was to engineer a robust URL-shortening utility that goes beyond simple 301 redirects by collecting actionable click telemetry, device types, and geographic referral patterns without sacrificing redirect latency.</p>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Technical Architecture</h2>
+      <ul>
+        <li><strong>Base62 Encoding & Hash Collision Management:</strong> Implemented a collision-resistant short-slug generator mapping auto-incremented identifiers to compact, human-readable slugs.</li>
+        <li><strong>Telemetry Middleware:</strong> Built lightweight Express request middleware that parses User-Agent headers, IP origins, and HTTP referrers asynchronously so redirect responses remain instantaneous.</li>
+        <li><strong>Embedded Persistence:</strong> Configured SQLite with WAL (Write-Ahead Logging) mode to handle concurrent link generation and high-volume redirect hits with zero external database overhead.</li>
+        <li><strong>Client Dashboard:</strong> Crafted a clean React and TypeScript interface using Vite, allowing users to create custom vanity aliases, view real-time click volume counters, and inspect breakdown charts.</li>
+      </ul>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Instant Link Shortening:</strong> Generates concise, shareable redirect links from arbitrary-length URLs.</li>
+        <li><strong>Custom Vanity Aliases:</strong> Allows users to specify branded or memorable URL slugs.</li>
+        <li><strong>Click Telemetry:</strong> Logs timestamps, referrers, and browser information on each incoming redirect hit.</li>
+        <li><strong>Analytics Summary:</strong> Visual displays of top traffic sources and access timeline graphs.</li>
+      </ul>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Technology Stack</h2>
+      <p>React · TypeScript · Vite · Tailwind CSS · Node.js · Express · SQLite · bcrypt</p>
+    </section>
+
+    <section class="case-section shell">
+      <h2>Engineering Decisions & Outcomes</h2>
+      <p>Building under strict hackathon constraints enforced disciplined technical choices: prioritizing reliable, file-backed SQLite persistence over heavy microservice topologies, maintaining strict TypeScript typing across the client and server interfaces, and decoupling redirect execution from analytical database writes.</p>
+      <p>The resulting prototype achieved fast link redirection and provided an intuitive telemetry dashboard, successfully completing all sprint requirements.</p>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <a class="wordmark" href="../index.html">Anantha Krishna <span>Manivannan</span><i>.</i></a>
+    <a href="../pages/contact.html">Contact</a>
+    <span>© <span class="year"></span> Anantha Krishna Manivannan</span>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
