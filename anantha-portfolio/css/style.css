@@ -370,7 +370,7 @@ img {
   position: relative;
   background: #ded5c7;
   padding: 12px 12px 42px;
-  transform: rotate(1.2deg);
+  transform: rotate(0deg);
   box-shadow: 14px 16px 0 var(--accent-terra-glow);
   border-radius: 2px;
   /* Extra bottom clearance so the rotated corner doesn't visually clip into the note */
